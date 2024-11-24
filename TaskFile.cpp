@@ -1,12 +1,16 @@
 #include "TaskFile.h"
 #include <iostream>
 
-TaskFile::TaskFile(int id, const std::string& path, int task)
-    : fileId(id), filePath(path), taskId(task) {
-    std::cout << "TaskFile created: " << filePath << " with ID " << fileId << std::endl;
+TaskFile::TaskFile(int id, const std::string& path, int task) 
+{
+    std::cout << "TaskFile created: " << path << " with ID " << id << std::endl;
+    fileId = id;
+    filePath = path;
+    taskId = task;
 }
 
-bool TaskFile::checkFile() {
+bool TaskFile::checkFile() 
+{
     std::cout << "Checking file: " << filePath << " associated with task ID: " << taskId << std::endl;
     // Simulate file check logic here
     /*

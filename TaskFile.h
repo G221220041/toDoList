@@ -3,7 +3,8 @@
 
 #include <string>
 
-class TaskFile {
+class TaskFile 
+{
 public:
     int fileId;
     std::string filePath;

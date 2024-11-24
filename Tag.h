@@ -3,7 +3,8 @@
 
 #include <string>
 
-class Tag {
+class Tag 
+{
 public:
     int tagId;
     std::string tagName;
