@@ -9,23 +9,26 @@ Tag::Tag(int id, const std::string& name, const std::string& style)
     tagStyle = style;
 }
 
-bool Tag::setName(const std::string& newName) 
+bool Tag::setName(const std::string& newName)
 {
-    std::cout << "Setting name for tag: " << tagId << " to " << newName << std::endl;
+    std::cout << "Setting name for tag: " << tagId << 
+		" to " << newName << std::endl;
     tagName = newName;
-    //check logic
-    //just to express my logic for once, sure it is stupid because the tagName is not pointer
+    // check logic
+    // just to express my logic for once, 
+	// sure it is stupid because the tagName is not pointer
     if (tagName == newName)
         return true;
     else
         return false;
 }
 
-bool Tag::setStyle(const std::string& newStyle) 
+bool Tag::setStyle(const std::string& newStyle)
 {
-    std::cout << "Setting style for tag: " << tagId << " to " << newStyle << std::endl;
+    std::cout << "Setting style for tag: " << tagId << 
+		" to " << newStyle << std::endl;
     tagStyle = newStyle;
-    //check logic
+    // check logic
     if (tagStyle == newStyle)
         return true;
     else
