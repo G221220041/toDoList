@@ -34,6 +34,15 @@ class Task {
     bool removeTag(Tag* tag);
     Reminder* createReminder(std::tm time);
     bool deleteReminder(Reminder* reminder);
+    std::string getTitle();
+    bool setTitle(std::string t);
+    int getId();
+    std::string getDescription();
+    bool setDescription(std::string d);
+    std::tm getdueDate();
+    bool setdueDate(std::tm date);
+    std::string getstatus();
+    bool setstatus(std::string s);
     void displayTaskInfo();
 };
 

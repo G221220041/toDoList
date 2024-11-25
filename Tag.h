@@ -3,7 +3,7 @@
 
 #include <string>
 
-class Tag{
+class Tag {
  private:
     int tagId;
     std::string tagName;
@@ -11,6 +11,8 @@ class Tag{
 
  public:
     Tag(int id, const std::string& name, const std::string& style);
+    std::string getName();
+    std::string getStyle();
     bool setName(const std::string& newName);
     bool setStyle(const std::string& newStyle);
 };

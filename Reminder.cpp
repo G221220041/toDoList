@@ -10,7 +10,12 @@ Reminder::Reminder(int id, int tid, std::tm time) {
 
 bool Reminder::setReminder(std::tm time) {
     std::cout << "Setting time for reminder: " << reminderId <<
-      " to " << asctime(&time) << std::endl;
+        " to " << std::asctime(&time) << std::endl;
     reminderTime = time;
     return true;
+}
+
+std::tm Reminder::getReminder() {
+    std::cout << "Get reminder time" << std::endl;
+    return reminderTime;
 }
