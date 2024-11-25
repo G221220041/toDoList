@@ -1,5 +1,5 @@
-#ifndef TASK_H
-#define TASK_H
+#ifndef TASK_H_
+#define TASK_H_
 
 #include <iostream>
 #include <vector>
@@ -9,9 +9,8 @@
 #include "TaskFile.h"
 #include "Reminder.h"
 
-class Task 
-{
-private:
+class Task {
+ private:
     int taskId;
     std::string title;
     std::string description;
@@ -23,7 +22,7 @@ private:
     std::vector<Reminder*> reminders;
     bool hasReminder;
 
-public:
+ public:
     Task(int id, const std::string& t, const std::string& d, std::tm date);
     bool setPrivate();
     bool resetPrivate();
@@ -38,4 +37,4 @@ public:
     void displayTaskInfo();
 };
 
-#endif
+#endif  // TASK_H_
